@@ -54,8 +54,19 @@ const config: Config = {
         "pos-100": "100% 100%",
       },
       fontSize: {
-        hero: ['clamp(1.5rem, 5.5vw, 3.75rem)', '1.1'],
+        hero: ["clamp(1.5rem, 5.5vw, 3.75rem)", "1.1"],
+        scheduleTitle: ["clamp(1rem, 5.5vw, 1.5rem)", "1.1"],
+        scheduleAuthor: ["clamp(0.75rem, 5.5vw, 1.5rem)", "1.1"],
       },
+      keyframes: {
+        'logo-cloud': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(calc(-100% - 3rem))' },
+        },
+      },
+      animation: {
+        'logo-cloud': 'logo-cloud 15s linear infinite',
+      }
     },
   },
   variants: {

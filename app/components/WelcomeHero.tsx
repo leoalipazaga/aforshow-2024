@@ -1,11 +1,12 @@
+import { ArrowUpRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { Countdown } from "./common/Countdown";
 
 export const WelcomeHero = () => {
   return (
-    <section className="mx-auto max-w-6xl w-full h-full">
-      <div className="relative z-20 flex flex-col gap-12 items-center text-center">
-        <div className="flex flex-col ">
+    <section className="mx-auto mt-5 max-w-6xl w-full h-full">
+      <div className="relative z-20 flex flex-col gap-14 items-center text-center">
+        <div className="flex flex-col gap-2">
           <h2 className="text-caTextSecondary text-lg md:text-[24px]">
             El evento de programación del año
           </h2>
@@ -22,10 +23,14 @@ export const WelcomeHero = () => {
         <Countdown startFrom={new Date("2024-09-15")} />
 
         <div className="flex gap-6 pb-12">
-          <Button size="xl">Inscribirse</Button>
+          <Button size="xl">
+            Inscribirse
+            <ArrowUpRight className="size-6 ml-2" />
+          </Button>
 
           <Button variant="secondary" size="xl">
             Comunidad
+            <ArrowUpRight className="size-6 ml-2" />
           </Button>
         </div>
       </div>
